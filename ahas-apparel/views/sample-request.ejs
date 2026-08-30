@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="bg-denim-deep text-white py-16 md:py-20">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="font-mono text-xs text-tan mb-5"><a href="/" class="hover:text-white">Home</a> / Request Samples</div>
+      <div class="eyebrow eyebrow-light">No Obligation</div>
+      <h1 class="text-4xl md:text-5xl text-white mb-4">Request Free Samples</h1>
+      <p class="text-[#C6CFDA] max-w-lg text-lg normal-case font-normal tracking-normal">Tell us which line you're evaluating and where to send it — samples typically despatch within 3–5 business days.</p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-[760px] mx-auto px-6">
+      <form class="reveal bg-white border border-line rounded-sm p-8 md:p-10" id="sampleForm">
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="flex flex-col gap-1.5">
+            <label for="name" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Full Name *</label>
+            <input type="text" id="name" name="name" required class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="company" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Company</label>
+            <input type="text" id="company" name="company" class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="flex flex-col gap-1.5">
+            <label for="email" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Email *</label>
+            <input type="email" id="email" name="email" required class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="phone" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Phone</label>
+            <input type="tel" id="phone" name="phone" class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div class="flex flex-col gap-1.5">
+            <label for="country" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Country</label>
+            <input type="text" id="country" name="country" class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label for="subcategory" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Product Line *</label>
+            <select id="subcategory" name="subcategory" required class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors">
+              <option value="">Select a product line</option>
+              <% subs.forEach(function(s){ %>
+                <option value="<%= s.slug %>"><%= s.parent.name %> — <%= s.name %></option>
+              <% }) %>
+            </select>
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="flex flex-col gap-1.5">
+            <label for="notes" class="font-mono text-[11px] tracking-wide uppercase text-ink-soft">Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Colours, sizes, or anything else we should know." class="font-body text-sm px-4 py-3 border border-line rounded-sm bg-paper focus:outline-none focus:border-denim focus:bg-white transition-colors resize-y"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-full sm:w-auto justify-center">Request Samples</button>
+        <div class="hidden" id="sampleStatus"></div>
+        <p class="text-sm text-ink-soft mt-4">Samples despatched worldwide &middot; No obligation &middot; Typical reply within one business day</p>
+      </form>
+    </div>
+  </section>
+
+  <%- include('partials/footer', { categoriesList: [] }) %>
+  <%- include('partials/float-widgets') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

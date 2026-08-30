@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink font-body antialiased; }
+  h1, h2, h3, h4 { @apply font-display font-semibold text-ink normal-case tracking-normal leading-snug; }
+}
+
+@layer components {
+  /* Stitch-dashed divider — the recurring "seam" motif from the brand's tech-pack concept */
+  .stitch { @apply border-t-2 border-dashed border-line; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] uppercase text-orange-deep mb-3;
+  }
+  .eyebrow::before { content: ''; @apply w-4 h-px bg-orange-deep; }
+  .eyebrow-light { @apply text-tan; }
+  .eyebrow-light::before { @apply bg-tan; }
+
+  .btn {
+    @apply inline-flex items-center gap-2 font-display text-sm tracking-wider uppercase px-6 py-3.5 rounded-sm transition-all duration-200;
+  }
+  .btn-primary { @apply bg-orange text-white hover:bg-orange-deep hover:-translate-y-0.5 shadow-lg shadow-orange/20; }
+  .btn-outline { @apply border-[1.5px] border-ink text-ink hover:bg-ink hover:text-white hover:-translate-y-0.5; }
+  .btn-outline-light { @apply border-[1.5px] border-white/50 text-white hover:bg-white hover:text-denim-deep hover:-translate-y-0.5; }
+
+  .section-head { @apply max-w-xl mb-10 md:mb-12; }
+
+  .card-hover { @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl; }
+
+  /* corner registration marks, echoing a cutting-pattern layout */
+  .reg-corner { @apply absolute w-3.5 h-3.5 border-ink/25; }
+  .reg-corner.tl { @apply top-2 left-2 border-t border-l; }
+  .reg-corner.br { @apply bottom-2 right-2 border-b border-r; }
+
+  .nav-link {
+    @apply font-display text-[13px] tracking-wide uppercase text-ink/80 hover:text-orange-deep border-b-2 border-transparent hover:border-orange transition-colors duration-150 pb-1;
+  }
+  .nav-link.active { @apply text-orange-deep border-orange; }
+
+  .reveal { @apply opacity-0 translate-y-6 transition-all duration-700 ease-out; }
+  .reveal.in-view { @apply opacity-100 translate-y-0; }
+}

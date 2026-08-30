@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <!-- ============ CATEGORY HERO ============ -->
+  <section class="relative bg-denim-deep text-white overflow-hidden">
+    <% if (sub.image) { %>
+      <div class="absolute inset-0">
+        <img src="<%= sub.image %>" class="w-full h-full object-cover opacity-25" alt="">
+        <div class="absolute inset-0 bg-gradient-to-r from-denim-deep via-denim-deep/95 to-denim-deep/70"></div>
+      </div>
+    <% } %>
+    <div class="relative z-10 max-w-[1280px] mx-auto px-6 py-16 md:py-20">
+      <div class="font-mono text-xs text-tan mb-5">
+        <a href="/" class="hover:text-white">Home</a> / <a href="/catalog" class="hover:text-white"><%= sub.parent.name %></a> / <%= sub.name %>
+      </div>
+      <div class="eyebrow eyebrow-light"><%= sub.parent.name %></div>
+      <h1 class="text-4xl md:text-5xl text-white mb-4 max-w-2xl"><%= sub.name %></h1>
+      <p class="text-[#C6CFDA] max-w-lg text-lg normal-case font-normal tracking-normal mb-10"><%= sub.tagline %></p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/15 border border-white/15 max-w-3xl">
+        <div class="bg-denim-deep/60 p-5"><div class="font-mono text-[10px] tracking-wide uppercase text-tan mb-1">Fabric</div><div class="font-display text-sm normal-case text-white"><%= sub.specs.fabric %></div></div>
+        <div class="bg-denim-deep/60 p-5"><div class="font-mono text-[10px] tracking-wide uppercase text-tan mb-1">Weight</div><div class="font-display text-sm normal-case text-white"><%= sub.specs.gsm %></div></div>
+        <div class="bg-denim-deep/60 p-5"><div class="font-mono text-[10px] tracking-wide uppercase text-tan mb-1">MOQ</div><div class="font-display text-sm normal-case text-white"><%= sub.specs.moq %></div></div>
+        <div class="bg-denim-deep/60 p-5"><div class="font-mono text-[10px] tracking-wide uppercase text-tan mb-1">Lead Time</div><div class="font-display text-sm normal-case text-white"><%= sub.specs.leadTime %></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="py-20">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">Available Now</div>
+        <h2 class="text-3xl mb-3"><%= sub.name %> Lines</h2>
+        <p class="text-ink-soft">Standard styles we run most often in this line — every product ships with full spec documentation and can be adjusted to your tech pack.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <% sub.products.forEach(function(p, i){ %>
+          <div class="reveal group relative bg-white border border-line rounded-sm overflow-hidden card-hover" style="transition-delay:<%= i*70 %>ms">
+            <div class="reg-corner tl"></div><div class="reg-corner br"></div>
+            <%- include('partials/media', { image: p.image, icon: sub.icon, alt: p.name }) %>
+            <div class="p-5">
+              <span class="font-mono text-[11px] text-orange-deep tracking-wide block mb-1"><%= p.sku %></span>
+              <h4 class="font-display text-base normal-case mb-1"><%= p.name %></h4>
+              <p class="text-sm text-ink-soft mb-3"><%= p.desc %></p>
+              <div class="font-mono text-[11px] text-ink-soft border-t border-dashed border-line pt-2.5">MOQ <%= p.moq %></div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY THIS LINE ============ -->
+  <section class="py-20 bg-paper-dim">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid sm:grid-cols-3 gap-5">
+        <div class="reveal bg-white border-t-[3px] border-orange rounded-sm p-7 shadow-sm">
+          <h3 class="text-base mb-2 normal-case">Custom Specification</h3>
+          <p class="text-sm text-ink-soft">Send your tech pack — we'll match fabric, wash, print and trims to your exact standard.</p>
+        </div>
+        <div class="reveal bg-white border-t-[3px] border-orange rounded-sm p-7 shadow-sm" style="transition-delay:80ms">
+          <h3 class="text-base mb-2 normal-case">Consistent Re-orders</h3>
+          <p class="text-sm text-ink-soft">Approved specs are saved against your account, so repeat orders match the first shipment exactly.</p>
+        </div>
+        <div class="reveal bg-white border-t-[3px] border-orange rounded-sm p-7 shadow-sm" style="transition-delay:160ms">
+          <h3 class="text-base mb-2 normal-case">Full Documentation</h3>
+          <p class="text-sm text-ink-soft">Every shipment includes lab test reports, packing lists and export paperwork.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="bg-orange text-white text-center py-20">
+    <div class="max-w-[1280px] mx-auto px-6 reveal">
+      <h2 class="text-3xl md:text-4xl text-white mb-3">Want Samples From This Line?</h2>
+      <p class="text-white/90 max-w-lg mx-auto mb-8">We'll send physical samples of <%= sub.name.toLowerCase() %> so you can check fabric, fit and finish before committing to volume.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/sample-request?category=<%= sub.slug %>" class="btn bg-white text-orange-deep hover:bg-denim-deep hover:text-white">Request Samples</a>
+        <a href="/catalog" class="btn btn-outline-light">Back to Full Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer', { categoriesList: categories }) %>
+  <%- include('partials/float-widgets') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

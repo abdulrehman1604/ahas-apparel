@@ -1,0 +1,27 @@
+{
+  "name": "ahas-apparel",
+  "version": "1.0.0",
+  "description": "Ahas Apparel - B2B wholesale apparel website (frontend + backend)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
+    "postinstall": "npm run build:css"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "nodemon": "^3.1.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.19"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

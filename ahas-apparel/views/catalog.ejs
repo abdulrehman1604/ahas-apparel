@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <!-- ============ HERO ============ -->
+  <section class="bg-denim-deep text-white py-16 md:py-20">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="font-mono text-xs text-tan mb-5"><a href="/" class="hover:text-white">Home</a> / Catalog</div>
+      <div class="eyebrow eyebrow-light">Full Range</div>
+      <h1 class="text-4xl md:text-5xl text-white mb-4">Catalog</h1>
+      <p class="text-[#C6CFDA] max-w-lg text-lg normal-case font-normal tracking-normal">Four categories, twenty manufacturing lines. Open any line for specs, MOQ and lead time.</p>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY BLOCKS ============ -->
+  <% categories.forEach(function(cat, i){ %>
+  <section class="py-20 <%= i % 2 === 1 ? 'bg-paper-dim' : '' %>" id="<%= cat.slug %>">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal flex items-end justify-between flex-wrap gap-4">
+        <div>
+          <div class="eyebrow"><%= cat.name %></div>
+          <h2 class="text-3xl mb-2"><%= cat.name %></h2>
+          <p class="text-ink-soft max-w-lg"><%= cat.tagline %></p>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <% cat.subcategories.forEach(function(sub, j){ %>
+          <% const firstImg = sub.products.find(p => p.image); %>
+          <a href="/catalog/<%= sub.slug %>" class="reveal group block bg-white border border-line rounded-sm overflow-hidden card-hover" style="transition-delay:<%= j*70 %>ms">
+            <%- include('partials/media', { image: firstImg ? firstImg.image : null, icon: sub.icon, alt: sub.name, ratio: 'aspect-[16/10]' }) %>
+            <div class="p-6">
+              <h3 class="text-base mb-2"><%= sub.name %></h3>
+              <p class="text-sm text-ink-soft mb-4"><%= sub.tagline %></p>
+              <span class="font-mono text-xs tracking-wide uppercase text-orange-deep">View landing page &rarr;</span>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+  <% }) %>
+
+  <!-- ============ CTA ============ -->
+  <section class="bg-orange text-white text-center py-20">
+    <div class="max-w-[1280px] mx-auto px-6 reveal">
+      <h2 class="text-3xl md:text-4xl text-white mb-3">Can't Find What You're Producing?</h2>
+      <p class="text-white/90 max-w-lg mx-auto mb-8">We take on custom lines outside this catalog too. Send us your tech pack and we'll quote it.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="btn bg-white text-orange-deep hover:bg-denim-deep hover:text-white">Contact Sales</a>
+        <a href="/sample-request" class="btn btn-outline-light">Request Samples</a>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer', { categoriesList: categories }) %>
+  <%- include('partials/float-widgets') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

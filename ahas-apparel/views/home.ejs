@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <!-- ============ HERO — animated image slider ============ -->
+  <section class="relative h-[86vh] min-h-[560px] overflow-hidden bg-denim-deep">
+    <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+      <img src="/images/products/leather-jackets/leather-jackets-05.jpg" class="w-full h-full object-cover animate-ken-burns" alt="">
+    </div>
+    <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-02.jpg" class="w-full h-full object-cover animate-ken-burns" alt="">
+    </div>
+    <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="/images/products/hoodies-sweatshirts/hoodies-sweatshirts-03.jpg" class="w-full h-full object-cover animate-ken-burns" alt="">
+    </div>
+    <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+      <img src="/images/products/school-uniforms/school-uniforms-03.jpg" class="w-full h-full object-cover animate-ken-burns" alt="">
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-denim-deep via-denim-deep/70 to-denim-deep/40"></div>
+    <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.03)_0px,rgba(255,255,255,0.03)_2px,transparent_2px,transparent_14px)]"></div>
+
+    <div class="absolute top-7 left-6 w-8 h-8 border-t-2 border-l-2 border-white/30"></div>
+    <div class="absolute bottom-7 right-6 w-8 h-8 border-b-2 border-r-2 border-white/30"></div>
+
+    <div class="relative z-10 h-full max-w-[1280px] mx-auto px-6 flex flex-col justify-center">
+      <div class="max-w-2xl animate-fade-up">
+        <div class="eyebrow eyebrow-light">Spec-Built Apparel Manufacturing</div>
+        <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">Apparel, Made Exactly<br class="hidden sm:block"> to Your Word.</h1>
+        <p class="text-[#C6CFDA] text-lg max-w-lg mb-8 normal-case font-normal tracking-normal">From leather outerwear to performance jerseys, Ahas Apparel manufactures across twenty product lines for brands, distributors and uniform programmes worldwide — tested, documented, and shipped on schedule, every time.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/catalog" class="btn btn-primary">Explore Catalog</a>
+          <a href="/sample-request" class="btn btn-outline-light">Request Free Samples</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="bg-white border-b border-line">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4">
+        <div class="text-center py-9 px-6 border-r border-line last:border-r-0 md:border-r"><div class="font-mono text-3xl text-denim">25+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft mt-1">Years Manufacturing</div></div>
+        <div class="text-center py-9 px-6 border-r-0 md:border-r border-line"><div class="font-mono text-3xl text-denim">38+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft mt-1">Countries Served</div></div>
+        <div class="text-center py-9 px-6 border-r border-line md:border-r"><div class="font-mono text-3xl text-denim">ISO 9001</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft mt-1">Quality Certified</div></div>
+        <div class="text-center py-9 px-6"><div class="font-mono text-3xl text-denim">120K+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft mt-1">Units Monthly Capacity</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCROLLING CATEGORY MARQUEE ============ -->
+  <div class="bg-denim-deep py-4 overflow-hidden border-b border-white/10">
+    <div class="flex whitespace-nowrap animate-marquee">
+      <% for(let r=0;r<2;r++){ %>
+        <% categories.forEach(function(cat){ cat.subcategories.forEach(function(sub){ %>
+          <span class="font-display text-sm tracking-wide uppercase text-white/70 mx-6">
+            <%= sub.name %> <span class="text-orange mx-6">&bull;</span>
+          </span>
+        <% }) }) %>
+      <% } %>
+    </div>
+  </div>
+
+  <!-- ============ TWO WAYS ============ -->
+  <section class="py-24">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">What We Supply</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Two Ways to Work With Us</h2>
+        <p class="text-ink-soft">Ahas Apparel supplies private-label finished garments and programme-based bulk manufacturing. Start with whichever fits your production.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="reveal border border-line rounded-sm bg-white p-9 card-hover">
+          <span class="font-mono text-[11px] tracking-wide uppercase text-orange-deep border border-orange rounded-full px-3 py-1 inline-block mb-5">Private Label</span>
+          <h3 class="text-xl mb-3">Finished Garments</h3>
+          <p class="text-ink-soft mb-5">Ready-to-ship apparel produced to your tech pack — labelled, packed and documented under your brand, at wholesale volume.</p>
+          <ul class="space-y-2.5 mb-7 text-sm text-ink-soft">
+            <li class="flex gap-2"><span class="text-orange">—</span> Wholesale MOQ from 150–300 pcs/style</li>
+            <li class="flex gap-2"><span class="text-orange">—</span> Your labels, hangtags &amp; packaging</li>
+            <li class="flex gap-2"><span class="text-orange">—</span> Consistent sizing across large runs</li>
+          </ul>
+          <a href="/catalog" class="btn btn-outline">Browse Finished Garments</a>
+        </div>
+        <div class="reveal border border-line rounded-sm bg-white p-9 card-hover" style="transition-delay:120ms">
+          <span class="font-mono text-[11px] tracking-wide uppercase text-orange-deep border border-orange rounded-full px-3 py-1 inline-block mb-5">Programme Manufacturing</span>
+          <h3 class="text-xl mb-3">Bulk &amp; Uniform Programmes</h3>
+          <p class="text-ink-soft mb-5">Recurring production for schools, corporates and teams — matched batch to batch so every re-order arrives exactly as approved.</p>
+          <ul class="space-y-2.5 mb-7 text-sm text-ink-soft">
+            <li class="flex gap-2"><span class="text-orange">—</span> Standing fabric &amp; colour matching</li>
+            <li class="flex gap-2"><span class="text-orange">—</span> Size-curve and roster-based cutting</li>
+            <li class="flex gap-2"><span class="text-orange">—</span> Dedicated programme account manager</li>
+          </ul>
+          <a href="/contact" class="btn btn-outline">Talk to Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY GRID ============ -->
+  <section class="py-24 bg-paper-dim" id="categories">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our Range</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Four Categories, Twenty Product Lines</h2>
+        <p class="text-ink-soft">Every line opens to its own landing page with specs, MOQs and the products we run most often — ready for you to fill with your own photography.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <% categories.forEach(function(cat, i){ %>
+          <a href="/catalog#<%= cat.slug %>" class="reveal group relative bg-white border border-line rounded-sm p-6 card-hover block" style="transition-delay:<%= i*80 %>ms">
+            <div class="w-14 h-14 border border-dashed border-line rounded-sm flex items-center justify-center mb-5 text-denim group-hover:border-orange transition-colors">
+              <div class="w-8 h-8"><%- include('partials/icon', { name: cat.icon }) %></div>
+            </div>
+            <span class="absolute top-6 right-6 font-mono text-[11px] text-ink-soft"><%= cat.subcategories.length %> lines</span>
+            <h3 class="text-base mb-2"><%= cat.name %></h3>
+            <p class="text-sm text-ink-soft mb-4"><%= cat.tagline %></p>
+            <span class="font-mono text-xs tracking-wide uppercase text-orange-deep">View category &rarr;</span>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE PRODUCTS SHOWCASE ============ -->
+  <section class="py-24 overflow-hidden">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">Signature Lines</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Built to Lead a Collection</h2>
+        <p class="text-ink-soft">The four styles our buyers reorder most — chosen to show what "made to spec" actually looks like on the rail.</p>
+      </div>
+
+      <!-- Showcase 1: image left -->
+      <div class="grid md:grid-cols-2 gap-0 items-center mb-6 border border-line rounded-sm overflow-hidden bg-white">
+        <div class="reveal aspect-[4/3] md:aspect-auto md:h-[440px] overflow-hidden group">
+          <img src="/images/products/leather-jackets/leather-jackets-01.jpg" alt="Classic Biker Jacket" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="reveal p-10 lg:p-14" style="transition-delay:100ms">
+          <span class="font-mono text-[11px] tracking-wide uppercase text-orange-deep">Outerwear &middot; AH-LJ-101</span>
+          <h3 class="text-2xl md:text-3xl mt-3 mb-4">The Classic Biker Jacket</h3>
+          <p class="text-ink-soft mb-6">Full-grain leather, hand-cut and stitched to a pattern refined over years of re-orders. Quilted lining, nickel hardware and an asymmetric zip that sits flat on every size in the curve — this is the jacket buyers use to anchor an entire outerwear season.</p>
+          <div class="grid grid-cols-2 gap-4 mb-7 text-sm">
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">Fabric</span><span class="font-display text-sm normal-case">Full-grain leather</span></div>
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">MOQ</span><span class="font-display text-sm normal-case">150 pcs / style</span></div>
+          </div>
+          <a href="/catalog/leather-jackets" class="btn btn-outline">View Leather Jackets</a>
+        </div>
+      </div>
+
+      <!-- Showcase 2: image right -->
+      <div class="grid md:grid-cols-2 gap-0 items-center mb-6 border border-line rounded-sm overflow-hidden bg-white">
+        <div class="reveal p-10 lg:p-14 md:order-1 order-2">
+          <span class="font-mono text-[11px] tracking-wide uppercase text-orange-deep">Sports &amp; Performance &middot; AH-RJ-201</span>
+          <h3 class="text-2xl md:text-3xl mt-3 mb-4">Touring Armour Jacket</h3>
+          <p class="text-ink-soft mb-6">Built for brands that need certified protection without sacrificing cut. CE-pocket ready, with a removable thermal liner for cross-season sell-through and pre-curved sleeves that hold their shape after a full riding season.</p>
+          <div class="grid grid-cols-2 gap-4 mb-7 text-sm">
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">Fabric</span><span class="font-display text-sm normal-case">Cowhide / Cordura</span></div>
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">MOQ</span><span class="font-display text-sm normal-case">100 pcs / style</span></div>
+          </div>
+          <a href="/catalog/motorcycle-riding-jackets" class="btn btn-outline">View Riding Jackets</a>
+        </div>
+        <div class="reveal aspect-[4/3] md:aspect-auto md:h-[440px] overflow-hidden group md:order-2 order-1" style="transition-delay:100ms">
+          <img src="/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-01.jpg" alt="Touring Armour Jacket" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+      </div>
+
+      <!-- Showcase 3: image left -->
+      <div class="grid md:grid-cols-2 gap-0 items-center border border-line rounded-sm overflow-hidden bg-white">
+        <div class="reveal aspect-[4/3] md:aspect-auto md:h-[440px] overflow-hidden group">
+          <img src="/images/products/hoodies-sweatshirts/hoodies-sweatshirts-02.jpg" alt="Pullover Hoodie" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="reveal p-10 lg:p-14" style="transition-delay:100ms">
+          <span class="font-mono text-[11px] tracking-wide uppercase text-orange-deep">Casual &amp; Fashion Wear &middot; AH-HD-502</span>
+          <h3 class="text-2xl md:text-3xl mt-3 mb-4">Pullover Hoodie</h3>
+          <p class="text-ink-soft mb-6">Brushed-back fleece with the weight to hold a print or embroidery without curling at the edges. A kangaroo pocket and clean silhouette make it the easiest style in the catalog to build a full colour range around.</p>
+          <div class="grid grid-cols-2 gap-4 mb-7 text-sm">
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">Fabric</span><span class="font-display text-sm normal-case">Cotton fleece</span></div>
+            <div><span class="block font-mono text-[10px] uppercase text-ink-soft/70">MOQ</span><span class="font-display text-sm normal-case">250 pcs / style</span></div>
+          </div>
+          <a href="/catalog/hoodies-sweatshirts" class="btn btn-outline">View Hoodies &amp; Sweatshirts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="py-24 bg-paper-dim">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">Why Ahas</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Built for Serious Buyers</h2>
+        <p class="text-ink-soft">We understand B2B apparel sourcing. Our process is built for buyers who need consistency, documentation and a team that answers the phone.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <% const features = [
+          ['Consistent Quality at Scale','Every batch is checked against the approved tech pack — colour, GSM and construction stay uniform across large orders.'],
+          ['Custom Fabric & Trims','Fabric weight, wash, print and trims specified to your standard, matched batch to batch on re-orders.'],
+          ['Ethical Production','Traceable supply chain with audited factory partners and responsible labour practices across our network.'],
+          ['Programme Partnership','Dedicated account managers for schools, corporates and brands running recurring seasonal or annual orders.'],
+          ['Reliable Global Shipping','Established freight lanes with full export documentation, so your production line is never waiting on paperwork.'],
+          ['Category Expertise','Deep experience across outerwear, casualwear, uniforms and performance wear — we know each category\'s demands.']
+        ]; %>
+        <% features.forEach(function(f, i){ %>
+          <div class="reveal bg-white border-t-[3px] border-orange rounded-sm p-7 shadow-sm card-hover" style="transition-delay:<%= i*60 %>ms">
+            <h3 class="text-base mb-2 normal-case"><%= f[0] %></h3>
+            <p class="text-sm text-ink-soft"><%= f[1] %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PRODUCTS ============ -->
+  <section class="py-24">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">Featured Lines</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Popular This Season</h2>
+        <p class="text-ink-soft">A snapshot of what buyers are specifying most, pulled straight from the live catalog.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <% featured.forEach(function(sub, i){ %>
+          <div class="reveal group relative bg-white border border-line rounded-sm overflow-hidden card-hover" style="transition-delay:<%= i*70 %>ms">
+            <div class="reg-corner tl"></div><div class="reg-corner br"></div>
+            <%- include('partials/media', { image: sub.image, icon: sub.icon, alt: sub.shortName }) %>
+            <div class="p-5">
+              <span class="font-mono text-[11px] text-orange-deep tracking-wide block mb-1"><%= sub.parent.name %></span>
+              <h4 class="font-display text-base normal-case mb-1"><%= sub.shortName %></h4>
+              <p class="text-sm text-ink-soft mb-3"><%= sub.tagline %></p>
+              <div class="font-mono text-[11px] text-ink-soft border-t border-dashed border-line pt-2.5">MOQ from <%= sub.specs.moq %></div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+      <div class="text-center mt-10 reveal">
+        <a href="/catalog" class="btn btn-outline">View Full Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="py-24 bg-paper-dim">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head mx-auto text-center reveal">
+        <div class="eyebrow justify-center">How It Works</div>
+        <h2 class="text-3xl md:text-4xl mb-3">From Tech Pack to Delivery</h2>
+        <p class="text-ink-soft mx-auto">Five steps, the same every time — so you always know where your order stands.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 lg:grid-cols-5 gap-8">
+        <% const steps = [
+          ['01','Browse & Shortlist','Explore the catalog and identify lines that match your spec.'],
+          ['02','Request Samples','Order physical samples to check fabric, fit and finish.'],
+          ['03','Confirm Tech Pack','Lock fabric, trims, sizing and quantities with our team.'],
+          ['04','Production & QC','Order enters production with checkpoints at every stage.'],
+          ['05','Global Delivery','Reliable logistics with full export documentation included.']
+        ]; %>
+        <% steps.forEach(function(s, i){ %>
+          <div class="reveal <%= i>0 ? 'sm:border-l sm:border-dashed sm:border-line sm:pl-6' : '' %>" style="transition-delay:<%= i*80 %>ms">
+            <div class="font-mono text-sm text-orange-deep mb-3"><%= s[0] %></div>
+            <h3 class="text-base mb-2 normal-case"><%= s[1] %></h3>
+            <p class="text-sm text-ink-soft"><%= s[2] %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GLOBAL EXPORT ============ -->
+  <section class="py-24 bg-denim-deep text-white">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow eyebrow-light">Global Export</div>
+        <h2 class="text-3xl md:text-4xl mb-3">Delivering to Buyers Worldwide</h2>
+        <p class="text-[#B9C4D4]">Established freight lanes across six continents. Our export team handles documentation and customs so your line is never waiting on paperwork.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+        <% const regions = [
+          ['North America','USA, Canada, Mexico'],
+          ['Europe','UK, Germany, Italy, France, Spain'],
+          ['Asia Pacific','Japan, South Korea, Australia'],
+          ['Middle East','UAE, Saudi Arabia, Qatar'],
+          ['South America','Brazil, Argentina, Chile'],
+          ['Africa','South Africa, Nigeria, Kenya']
+        ]; %>
+        <% regions.forEach(function(r, i){ %>
+          <div class="reveal border-t border-dashed border-white/20 pt-4" style="transition-delay:<%= i*60 %>ms">
+            <h4 class="font-display text-sm tracking-wide uppercase text-tan mb-1"><%= r[0] %></h4>
+            <p class="text-sm text-[#C6CFDA]"><%= r[1] %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="py-24">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head mx-auto text-center reveal">
+        <div class="eyebrow justify-center">Client Testimonials</div>
+        <h2 class="text-3xl md:text-4xl">Trusted by Manufacturers and Brands</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <% const testis = [
+          ['Ahas has been our primary apparel manufacturer for six years. Their sizing consistency across large orders is unmatched.','Laura Chen','Sourcing Director, Northfield Apparel, USA'],
+          ['Their uniform programme team matched our exact fabric year after year — reordering is genuinely simple.','David Okoro','Procurement Lead, Crestview Schools Group, UK'],
+          ['From sample to bulk delivery the process is seamless. Their print quality meets our league standard every time.','Marco Fontana','Kit Manager, Fontana Sports Club, Italy']
+        ]; %>
+        <% testis.forEach(function(t, i){ %>
+          <div class="reveal relative bg-white border border-line rounded-sm p-8" style="transition-delay:<%= i*80 %>ms">
+            <span class="absolute top-2 right-5 font-display text-5xl text-line leading-none">"</span>
+            <p class="text-sm text-ink mb-5 relative z-10"><%= t[0] %></p>
+            <div class="font-display text-sm normal-case"><%= t[1] %></div>
+            <div class="font-mono text-[11px] text-ink-soft"><%= t[2] %></div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="bg-orange text-white text-center py-20">
+    <div class="max-w-[1280px] mx-auto px-6 reveal">
+      <h2 class="text-3xl md:text-4xl text-white mb-3">Looking for a Reliable Apparel Manufacturer?</h2>
+      <p class="text-white/90 max-w-xl mx-auto mb-8">Tell us what you're producing and we'll send matching samples. From first swatch to bulk despatch, you deal with the same team throughout.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/sample-request" class="btn bg-white text-orange-deep hover:bg-denim-deep hover:text-white">Request Free Samples</a>
+        <a href="/contact" class="btn btn-outline-light">Contact Sales</a>
+      </div>
+      <div class="font-mono text-xs mt-6 opacity-85">Samples despatched worldwide &middot; No obligation &middot; Typical reply within one business day</div>
+    </div>
+  </section>
+
+  <%- include('partials/footer', { categoriesList: categories }) %>
+  <%- include('partials/float-widgets') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

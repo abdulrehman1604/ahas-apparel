@@ -1,0 +1,318 @@
+[
+  {
+    "slug": "outerwear",
+    "name": "Outerwear",
+    "tagline": "Structured outer layers built for climate, road and runway.",
+    "icon": "jacket",
+    "heroImage": "/images/products/leather-jackets/leather-jackets-01.jpg",
+    "subcategories": [
+      {
+        "slug": "leather-jackets",
+        "name": "Leather Jackets",
+        "shortName": "Leather Jackets",
+        "tagline": "Full-grain and finished leather jackets cut to wholesale spec.",
+        "icon": "jacket",
+        "specs": { "fabric": "Full-grain / PU leather", "gsm": "N/A (0.9-1.3mm)", "moq": "150 pcs / style", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-LJ-101", "name": "Classic Biker Jacket", "desc": "Asymmetric zip, quilted lining, nickel hardware.", "moq": "150 pcs", "image": "/images/products/leather-jackets/leather-jackets-01.jpg" },
+          { "sku": "AH-LJ-102", "name": "Cafe Racer Jacket", "desc": "Minimal collar, ribbed cuffs, slim silhouette.", "moq": "150 pcs", "image": "/images/products/leather-jackets/leather-jackets-02.jpg" },
+          { "sku": "AH-LJ-103", "name": "Bomber Leather Jacket", "desc": "Knit hem and collar, snap chest pockets.", "moq": "200 pcs", "image": "/images/products/leather-jackets/leather-jackets-03.jpg" },
+          { "sku": "AH-LJ-104", "name": "Trucker Leather Jacket", "desc": "Point collar, button front, twin chest flaps.", "moq": "150 pcs", "image": "/images/products/leather-jackets/leather-jackets-04.jpg" }
+        ]
+      },
+      {
+        "slug": "motorcycle-riding-jackets",
+        "name": "Motorcycle & Riding Jackets",
+        "shortName": "Riding Jackets",
+        "tagline": "CE-armour-ready riding jackets for performance brands.",
+        "icon": "jacket",
+        "specs": { "fabric": "Cowhide / Cordura textile", "gsm": "600D-1000D (textile)", "moq": "100 pcs / style", "leadTime": "40-45 days" },
+        "products": [
+          { "sku": "AH-RJ-201", "name": "Touring Armour Jacket", "desc": "CE-pocket ready, removable thermal liner.", "moq": "100 pcs", "image": "/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-01.jpg" },
+          { "sku": "AH-RJ-202", "name": "Sport Riding Jacket", "desc": "Pre-curved sleeves, stretch side panels.", "moq": "100 pcs", "image": "/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-02.jpg" },
+          { "sku": "AH-RJ-203", "name": "Adventure Riding Jacket", "desc": "Ventilated panels, waterproof membrane option.", "moq": "150 pcs", "image": "/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-03.jpg" },
+          { "sku": "AH-RJ-204", "name": "Urban Commuter Jacket", "desc": "Reflective piping, reinforced elbow zones.", "moq": "100 pcs", "image": "/images/products/motorcycle-riding-jackets/motorcycle-riding-jackets-04.jpg" }
+        ]
+      },
+      {
+        "slug": "fashion-jackets",
+        "name": "Fashion Jackets",
+        "shortName": "Fashion Jackets",
+        "tagline": "Season-led jackets for contemporary fashion labels.",
+        "icon": "jacket",
+        "specs": { "fabric": "Leather / suede / blends", "gsm": "N/A", "moq": "120 pcs / style", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-FJ-301", "name": "Oversized Trench Jacket", "desc": "Belted waist, dropped shoulder line.", "moq": "120 pcs" },
+          { "sku": "AH-FJ-302", "name": "Cropped Moto Jacket", "desc": "Cropped hem, statement zip hardware.", "moq": "120 pcs" },
+          { "sku": "AH-FJ-303", "name": "Suede Shirt Jacket", "desc": "Soft suede, shirt-style yoke and cuffs.", "moq": "150 pcs" },
+          { "sku": "AH-FJ-304", "name": "Utility Field Jacket", "desc": "Multi-pocket utility styling, cotton-leather mix.", "moq": "120 pcs" }
+        ]
+      },
+      {
+        "slug": "denim-jackets",
+        "name": "Denim Jackets",
+        "shortName": "Denim Jackets",
+        "tagline": "Washed and raw denim outerwear, cut for consistent fading.",
+        "icon": "jacket",
+        "specs": { "fabric": "12-14oz cotton denim", "gsm": "N/A", "moq": "150 pcs / style", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-DJ-901", "name": "Classic Trucker Jacket", "desc": "Chest flap pockets, adjustable waist tabs.", "moq": "150 pcs" },
+          { "sku": "AH-DJ-902", "name": "Sherpa-Lined Denim Jacket", "desc": "Sherpa collar and lining for cold-weather wear.", "moq": "150 pcs" },
+          { "sku": "AH-DJ-903", "name": "Oversized Denim Jacket", "desc": "Dropped shoulder, raw-edge hem finish.", "moq": "150 pcs" },
+          { "sku": "AH-DJ-904", "name": "Distressed Wash Jacket", "desc": "Whisker fading, garment-washed softness.", "moq": "180 pcs" }
+        ]
+      },
+      {
+        "slug": "puffer-padded-jackets",
+        "name": "Puffer & Padded Jackets",
+        "shortName": "Puffer Jackets",
+        "tagline": "Insulated outerwear engineered for real cold-weather retail.",
+        "icon": "jacket",
+        "specs": { "fabric": "Nylon shell, poly-fill", "gsm": "40-120g fill weight", "moq": "150 pcs / style", "leadTime": "40-45 days" },
+        "products": [
+          { "sku": "AH-PJ-501", "name": "Quilted Puffer Jacket", "desc": "Box-quilted panels, stand collar, zip pockets.", "moq": "150 pcs" },
+          { "sku": "AH-PJ-502", "name": "Hooded Down-Alternative Coat", "desc": "Detachable hood, water-resistant shell.", "moq": "150 pcs" },
+          { "sku": "AH-PJ-503", "name": "Cropped Puffer Vest", "desc": "Sleeveless, lightweight fill, ribbed trims.", "moq": "150 pcs" },
+          { "sku": "AH-PJ-504", "name": "Long-Line Puffer Coat", "desc": "Below-knee length, storm-flap zip.", "moq": "150 pcs" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "casual-fashion-wear",
+    "name": "Casual & Fashion Wear",
+    "tagline": "Everyday essentials produced at volume without losing finish.",
+    "icon": "tshirt",
+    "heroImage": "/images/products/tshirts-polos/tshirts-polos-02.jpg",
+    "subcategories": [
+      {
+        "slug": "tshirts-polos",
+        "name": "T-Shirts & Polos",
+        "shortName": "T-Shirts & Polos",
+        "tagline": "Combed cotton and blended jersey, printed or plain.",
+        "icon": "tshirt",
+        "specs": { "fabric": "100% cotton / CVC / PC", "gsm": "160-220 GSM", "moq": "300 pcs / style", "leadTime": "25-30 days" },
+        "products": [
+          { "sku": "AH-TS-401", "name": "Diagonal Stripe Polo", "desc": "Sublimated colour-block, moisture-wicking knit.", "moq": "300 pcs", "image": "/images/products/tshirts-polos/tshirts-polos-01.jpg" },
+          { "sku": "AH-TS-402", "name": "Contrast Placket Polo", "desc": "Tipped collar, contrast inner placket.", "moq": "300 pcs", "image": "/images/products/tshirts-polos/tshirts-polos-02.jpg" },
+          { "sku": "AH-TS-403", "name": "Piped Performance Polo", "desc": "Colour-piped panels, flat-lock seams.", "moq": "300 pcs", "image": "/images/products/tshirts-polos/tshirts-polos-03.jpg" },
+          { "sku": "AH-TS-404", "name": "Two-Tone Sport Polo", "desc": "Raglan sleeve, breathable mesh side vents.", "moq": "300 pcs", "image": "/images/products/tshirts-polos/tshirts-polos-04.jpg" }
+        ]
+      },
+      {
+        "slug": "hoodies-sweatshirts",
+        "name": "Hoodies & Sweatshirts",
+        "shortName": "Hoodies & Sweatshirts",
+        "tagline": "Brushed fleece and French terry, built for print and embroidery.",
+        "icon": "hoodie",
+        "specs": { "fabric": "Cotton fleece / French terry", "gsm": "280-380 GSM", "moq": "250 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-HD-501", "name": "Crewneck Sweatshirt", "desc": "French terry, dropped shoulder seam.", "moq": "250 pcs", "image": "/images/products/hoodies-sweatshirts/hoodies-sweatshirts-01.jpg" },
+          { "sku": "AH-HD-502", "name": "Pullover Hoodie", "desc": "Kangaroo pocket, brushed-back fleece.", "moq": "250 pcs", "image": "/images/products/hoodies-sweatshirts/hoodies-sweatshirts-02.jpg" },
+          { "sku": "AH-HD-503", "name": "Colour-Block Hoodie", "desc": "Raglan sleeve, contrast hood lining.", "moq": "250 pcs", "image": "/images/products/hoodies-sweatshirts/hoodies-sweatshirts-03.jpg" },
+          { "sku": "AH-HD-504", "name": "Heavyweight Fleece Hoodie", "desc": "380GSM fleece, double-layer hood.", "moq": "300 pcs", "image": "/images/products/hoodies-sweatshirts/hoodies-sweatshirts-04.jpg" }
+        ]
+      },
+      {
+        "slug": "pants-trousers",
+        "name": "Pants & Trousers",
+        "shortName": "Pants & Trousers",
+        "tagline": "Woven and knit bottoms cut to consistent block patterns.",
+        "icon": "pants",
+        "specs": { "fabric": "Cotton twill / denim / fleece", "gsm": "220-320 GSM", "moq": "250 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-PT-601", "name": "Tapered Chino Trouser", "desc": "Stretch twill, tapered leg, YKK fly zip.", "moq": "250 pcs", "image": "/images/products/pants-trousers/pants-trousers-01.jpg" },
+          { "sku": "AH-PT-602", "name": "Cargo Utility Pant", "desc": "Six-pocket cargo, reinforced knee panel.", "moq": "250 pcs", "image": "/images/products/pants-trousers/pants-trousers-02.jpg" },
+          { "sku": "AH-PT-603", "name": "Fleece Jogger", "desc": "Elastic waist, ribbed cuff, side pockets.", "moq": "300 pcs", "image": "/images/products/pants-trousers/pants-trousers-03.jpg" },
+          { "sku": "AH-PT-604", "name": "Straight Denim Pant", "desc": "12oz denim, five-pocket construction.", "moq": "250 pcs", "image": "/images/products/pants-trousers/pants-trousers-04.jpg" }
+        ]
+      },
+      {
+        "slug": "casual-shirts",
+        "name": "Casual & Formal Shirts",
+        "shortName": "Shirts",
+        "tagline": "Woven shirting for everyday, business-casual and formal lines.",
+        "icon": "uniform",
+        "specs": { "fabric": "Cotton poplin / oxford", "gsm": "110-140 GSM", "moq": "250 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-CS-701", "name": "Oxford Button-Down", "desc": "Classic collar, chest patch pocket.", "moq": "250 pcs" },
+          { "sku": "AH-CS-702", "name": "Slim-Fit Poplin Shirt", "desc": "Wrinkle-resistant finish, curved hem.", "moq": "250 pcs" },
+          { "sku": "AH-CS-703", "name": "Flannel Check Shirt", "desc": "Brushed cotton flannel, dual chest pockets.", "moq": "250 pcs" },
+          { "sku": "AH-CS-704", "name": "Linen-Blend Resort Shirt", "desc": "Breathable weave, relaxed camp collar.", "moq": "250 pcs" }
+        ]
+      },
+      {
+        "slug": "shorts",
+        "name": "Shorts",
+        "shortName": "Shorts",
+        "tagline": "Woven and knit shorts for warm-weather and athleisure ranges.",
+        "icon": "pants",
+        "specs": { "fabric": "Cotton twill / poly interlock", "gsm": "180-260 GSM", "moq": "250 pcs / style", "leadTime": "25-30 days" },
+        "products": [
+          { "sku": "AH-SH-801", "name": "Chino Walk Short", "desc": "Tailored fit, side-seam pockets.", "moq": "250 pcs" },
+          { "sku": "AH-SH-802", "name": "Cargo Short", "desc": "Six-pocket utility styling, reinforced hem.", "moq": "250 pcs" },
+          { "sku": "AH-SH-803", "name": "Fleece Sweat Short", "desc": "Elastic waist, ribbed leg opening.", "moq": "300 pcs" },
+          { "sku": "AH-SH-804", "name": "Board Short", "desc": "Quick-dry woven, mesh brief lining.", "moq": "250 pcs" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "uniforms-workwear",
+    "name": "Uniforms & Workwear",
+    "tagline": "Durable, spec-compliant uniforms produced to programme scale.",
+    "icon": "uniform",
+    "heroImage": "/images/products/school-uniforms/school-uniforms-01.jpg",
+    "subcategories": [
+      {
+        "slug": "school-uniforms",
+        "name": "School Uniforms",
+        "shortName": "School Uniforms",
+        "tagline": "Easy-care fabrics built to survive a full school year.",
+        "icon": "uniform",
+        "specs": { "fabric": "Poly-cotton / cotton twill", "gsm": "180-240 GSM", "moq": "500 pcs / programme", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-SU-701", "name": "Junior Polo & Skort Set", "desc": "Easy-iron poly-cotton, reinforced seams.", "moq": "500 sets", "image": "/images/products/school-uniforms/school-uniforms-01.jpg" },
+          { "sku": "AH-SU-702", "name": "Pinafore & Blouse Set", "desc": "Box-pleat skirt, adjustable straps.", "moq": "500 pcs", "image": "/images/products/school-uniforms/school-uniforms-02.jpg" },
+          { "sku": "AH-SU-703", "name": "Sports Day PE Kit", "desc": "Breathable jersey shirt and shorts set.", "moq": "500 sets", "image": "/images/products/school-uniforms/school-uniforms-03.jpg" },
+          { "sku": "AH-SU-704", "name": "V-Neck School Sweater", "desc": "Acrylic-wool blend, ribbed trims.", "moq": "500 pcs", "image": "/images/products/school-uniforms/school-uniforms-04.jpg" }
+        ]
+      },
+      {
+        "slug": "corporate-uniforms",
+        "name": "Corporate Uniforms",
+        "shortName": "Corporate Uniforms",
+        "tagline": "Front-of-house and office uniforms with a tailored finish.",
+        "icon": "uniform",
+        "specs": { "fabric": "Poly-viscose suiting", "gsm": "200-260 GSM", "moq": "300 pcs / programme", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-CU-801", "name": "Tailored Blazer", "desc": "Half-canvas construction, branded lining option.", "moq": "300 pcs" },
+          { "sku": "AH-CU-802", "name": "Corporate Shirt", "desc": "Wrinkle-resistant poplin, curved hem.", "moq": "300 pcs" },
+          { "sku": "AH-CU-803", "name": "Front-Desk Waistcoat", "desc": "Fitted cut, back adjuster strap.", "moq": "300 pcs" },
+          { "sku": "AH-CU-804", "name": "Straight-Leg Uniform Trouser", "desc": "Stretch suiting, hidden waistband adjuster.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "industrial-workwear",
+        "name": "Industrial Workwear",
+        "shortName": "Industrial Workwear",
+        "tagline": "Heavy-duty, standards-ready workwear for demanding sites.",
+        "icon": "workwear",
+        "specs": { "fabric": "Ripstop / canvas twill", "gsm": "260-320 GSM", "moq": "300 pcs / style", "leadTime": "35-40 days" },
+        "products": [
+          { "sku": "AH-IW-901", "name": "Hi-Vis Bib Coverall", "desc": "Reflective tape, triple-stitched seams.", "moq": "300 pcs" },
+          { "sku": "AH-IW-902", "name": "Flame-Resistant Coat", "desc": "FR-treated canvas, snap-front closure.", "moq": "300 pcs" },
+          { "sku": "AH-IW-903", "name": "Cargo Work Trouser", "desc": "Reinforced knee, tool loop, ripstop fabric.", "moq": "300 pcs" },
+          { "sku": "AH-IW-904", "name": "Insulated Work Jacket", "desc": "Quilted lining, storm cuffs, hi-vis piping.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "hospitality-uniforms",
+        "name": "Hospitality & Restaurant Uniforms",
+        "shortName": "Hospitality Uniforms",
+        "tagline": "Kitchen and front-of-house wear built for long, hot shifts.",
+        "icon": "uniform",
+        "specs": { "fabric": "Poly-cotton twill / ripstop", "gsm": "190-230 GSM", "moq": "300 pcs / programme", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-HU-101", "name": "Chef Jacket", "desc": "Double-breasted, heat-resistant buttons.", "moq": "300 pcs" },
+          { "sku": "AH-HU-102", "name": "Waiter Apron Set", "desc": "Adjustable waist tie, front utility pocket.", "moq": "300 pcs" },
+          { "sku": "AH-HU-103", "name": "Kitchen Cargo Trouser", "desc": "Fluid-resistant finish, elastic-side waist.", "moq": "300 pcs" },
+          { "sku": "AH-HU-104", "name": "Front-of-House Vest", "desc": "Tailored fit, branded button option.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "medical-scrubs",
+        "name": "Medical & Scrubs Uniforms",
+        "shortName": "Medical Scrubs",
+        "tagline": "Easy-care scrubs built for clinical and hospital programmes.",
+        "icon": "uniform",
+        "specs": { "fabric": "Poly-cotton / performance stretch", "gsm": "170-210 GSM", "moq": "400 pcs / programme", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-MS-201", "name": "V-Neck Scrub Top", "desc": "Multi-pocket front, side vents for movement.", "moq": "400 pcs" },
+          { "sku": "AH-MS-202", "name": "Scrub Trouser", "desc": "Drawstring and elastic waist, cargo pocket.", "moq": "400 pcs" },
+          { "sku": "AH-MS-203", "name": "Lab Coat", "desc": "Knee-length, stain-resistant finish.", "moq": "300 pcs" },
+          { "sku": "AH-MS-204", "name": "Scrub Jacket", "desc": "Warm-up layer, ribbed cuffs, zip front.", "moq": "300 pcs" }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sports-performance-wear",
+    "name": "Sports & Performance Wear",
+    "tagline": "Technical fabrics engineered for movement and recovery.",
+    "icon": "sport",
+    "heroImage": "/images/products/tshirts-polos/tshirts-polos-04.jpg",
+    "subcategories": [
+      {
+        "slug": "sportswear",
+        "name": "Sportswear",
+        "shortName": "Sportswear",
+        "tagline": "Compression and training layers built on stretch knits.",
+        "icon": "sport",
+        "specs": { "fabric": "Poly-spandex interlock", "gsm": "180-220 GSM", "moq": "300 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-SW-A01", "name": "Compression Base Layer", "desc": "4-way stretch, flat-lock seams.", "moq": "300 pcs" },
+          { "sku": "AH-SW-A02", "name": "Training Tank Top", "desc": "Mesh back panel, moisture-wicking finish.", "moq": "300 pcs" },
+          { "sku": "AH-SW-A03", "name": "Running Shorts", "desc": "Split hem, internal brief lining.", "moq": "300 pcs" },
+          { "sku": "AH-SW-A04", "name": "Track Jacket", "desc": "Full-zip, ribbed collar, tricot lining.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "teamwear-jerseys",
+        "name": "Teamwear & Jerseys",
+        "shortName": "Teamwear & Jerseys",
+        "tagline": "Sublimated jerseys and kits for clubs and leagues.",
+        "icon": "jersey",
+        "specs": { "fabric": "Sublimation-ready polyester", "gsm": "140-180 GSM", "moq": "200 pcs / kit", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-TJ-B01", "name": "Sublimated Match Jersey", "desc": "Full-colour print, breathable mesh side.", "moq": "200 pcs" },
+          { "sku": "AH-TJ-B02", "name": "Team Shorts", "desc": "Elastic waist, contrast side panel.", "moq": "200 pcs" },
+          { "sku": "AH-TJ-B03", "name": "Goalkeeper Kit", "desc": "Padded elbow zones, contrast colourway.", "moq": "150 pcs" },
+          { "sku": "AH-TJ-B04", "name": "Warm-Up Kit", "desc": "Jacket and pant set, snap-away legs option.", "moq": "200 pcs" }
+        ]
+      },
+      {
+        "slug": "gym-training-wear",
+        "name": "Gym / Training Wear",
+        "shortName": "Gym / Training Wear",
+        "tagline": "Studio-to-street performance basics in technical knits.",
+        "icon": "sport",
+        "specs": { "fabric": "Nylon-spandex / poly interlock", "gsm": "200-260 GSM", "moq": "300 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-GW-C01", "name": "High-Waist Training Legging", "desc": "Squat-proof fabric, side pocket option.", "moq": "300 pcs" },
+          { "sku": "AH-GW-C02", "name": "Seamless Sports Bra", "desc": "Medium support, bonded edges.", "moq": "300 pcs" },
+          { "sku": "AH-GW-C03", "name": "Training T-Shirt", "desc": "Lightweight mesh-back tee, quick-dry.", "moq": "300 pcs" },
+          { "sku": "AH-GW-C04", "name": "Gym Joggers", "desc": "Tapered fit, zip pockets, ribbed cuff.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "compression-wear",
+        "name": "Compression Wear",
+        "shortName": "Compression Wear",
+        "tagline": "Second-skin layers for recovery, support and base-layering.",
+        "icon": "sport",
+        "specs": { "fabric": "Nylon-elastane knit", "gsm": "190-230 GSM", "moq": "300 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-CW-301", "name": "Full-Length Compression Tight", "desc": "Graduated compression, flat-seam construction.", "moq": "300 pcs" },
+          { "sku": "AH-CW-302", "name": "Compression Long-Sleeve Top", "desc": "Second-skin fit, UV-protective finish.", "moq": "300 pcs" },
+          { "sku": "AH-CW-303", "name": "Calf Compression Sleeve", "desc": "Targeted support zone, silicone grip band.", "moq": "500 pcs" },
+          { "sku": "AH-CW-304", "name": "Compression Shorts", "desc": "9-inch inseam, anti-chafe inner seams.", "moq": "300 pcs" }
+        ]
+      },
+      {
+        "slug": "tracksuits",
+        "name": "Tracksuits",
+        "shortName": "Tracksuits",
+        "tagline": "Matched jacket-and-pant sets for teams and leisurewear lines.",
+        "icon": "sport",
+        "specs": { "fabric": "Poly tricot / fleece", "gsm": "220-280 GSM", "moq": "250 pcs / style", "leadTime": "30-35 days" },
+        "products": [
+          { "sku": "AH-TR-401", "name": "Tricot Track Jacket & Pant Set", "desc": "Full-zip jacket, tapered ankle-zip pant.", "moq": "250 pcs" },
+          { "sku": "AH-TR-402", "name": "Fleece Tracksuit Set", "desc": "Brushed interior, ribbed cuffs and hem.", "moq": "250 pcs" },
+          { "sku": "AH-TR-403", "name": "Colour-Block Tracksuit", "desc": "Contrast side panels, embroidery-ready chest.", "moq": "250 pcs" },
+          { "sku": "AH-TR-404", "name": "Hooded Tracksuit Set", "desc": "Attached hood, kangaroo pocket jacket.", "moq": "250 pcs" }
+        ]
+      }
+    ]
+  }
+]

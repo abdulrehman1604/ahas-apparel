@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="bg-denim-deep text-white py-16 md:py-20">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="font-mono text-xs text-tan mb-5"><a href="/" class="hover:text-white">Home</a> / About</div>
+      <div class="eyebrow eyebrow-light">Who We Are</div>
+      <h1 class="text-4xl md:text-5xl text-white mb-4 max-w-2xl">About Ahas Apparel</h1>
+      <p class="text-[#C6CFDA] max-w-lg text-lg normal-case font-normal tracking-normal">A B2B apparel manufacturer producing outerwear, casualwear, uniforms and performance wear for brands, distributors and institutions worldwide.</p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="reveal bg-paper-dim rounded-sm p-8 border-t-[3px] border-orange">
+          <h3 class="text-lg mb-3 normal-case">Our Story</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">Ahas Apparel started as a small cut-and-sew unit and grew into a full-service manufacturing partner across four product categories, without losing the batch-to-batch attention that made the name in the first place.</p>
+        </div>
+        <div class="reveal bg-paper-dim rounded-sm p-8 border-t-[3px] border-orange" style="transition-delay:100ms">
+          <h3 class="text-lg mb-3 normal-case">Our Facilities</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">In-house cutting, stitching, printing and finishing lines, backed by an audited quality lab and a dedicated export documentation team.</p>
+        </div>
+        <div class="reveal bg-paper-dim rounded-sm p-8 border-t-[3px] border-orange" style="transition-delay:200ms">
+          <h3 class="text-lg mb-3 normal-case">Our Promise</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">What you approve in the sample is what ships in the bulk order — every time, on every re-order, at whatever scale your programme needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-paper-dim">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <div class="section-head reveal">
+        <div class="eyebrow">By the Numbers</div>
+        <h2 class="text-3xl mb-3">A Track Record Buyers Can Verify</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div class="reveal bg-white border border-line rounded-sm p-7 text-center"><div class="font-mono text-3xl text-denim mb-1">25+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft">Years Manufacturing</div></div>
+        <div class="reveal bg-white border border-line rounded-sm p-7 text-center" style="transition-delay:80ms"><div class="font-mono text-3xl text-denim mb-1">38+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft">Countries Served</div></div>
+        <div class="reveal bg-white border border-line rounded-sm p-7 text-center" style="transition-delay:160ms"><div class="font-mono text-3xl text-denim mb-1">20</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft">Product Lines</div></div>
+        <div class="reveal bg-white border border-line rounded-sm p-7 text-center" style="transition-delay:240ms"><div class="font-mono text-3xl text-denim mb-1">120K+</div><div class="font-display text-xs tracking-wide uppercase text-ink-soft">Units Monthly</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-orange text-white text-center py-20">
+    <div class="max-w-[1280px] mx-auto px-6 reveal">
+      <h2 class="text-3xl md:text-4xl text-white mb-3">Let's Talk About Your Next Order</h2>
+      <p class="text-white/90 max-w-lg mx-auto mb-8">Whether it's a single style or a full uniform programme, our team is ready to scope it with you.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="btn bg-white text-orange-deep hover:bg-denim-deep hover:text-white">Contact Sales</a>
+        <a href="/catalog" class="btn btn-outline-light">Browse Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer', { categoriesList: [] }) %>
+  <%- include('partials/float-widgets') %>
+  <script src="/js/main.js"></script>
+</body>
+</html>

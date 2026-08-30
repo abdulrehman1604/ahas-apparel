@@ -1,0 +1,57 @@
+<footer class="bg-denim-deep text-[#B9C4D4]">
+  <div class="max-w-[1280px] mx-auto px-6 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-orange to-orange-deep flex items-center justify-center text-white font-display font-bold text-base shadow-md shadow-orange/25">A</span>
+          <span class="flex flex-col leading-none">
+            <span class="font-display font-bold text-lg text-white tracking-tight">Ahas<span class="text-orange">.</span></span>
+            <span class="font-mono text-[9px] tracking-[0.22em] text-[#8695A6] uppercase mt-0.5">Apparel Co.</span>
+          </span>
+        </div>
+        <p class="text-sm leading-relaxed text-[#9FAEBE] mb-5">Wholesale apparel manufacturing for brands, distributors and uniform programmes — outerwear to performance wear, made to spec and shipped worldwide.</p>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center text-xs hover:bg-white hover:text-denim-deep transition-colors">IG</a>
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center text-xs hover:bg-white hover:text-denim-deep transition-colors">FB</a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full border border-white/25 flex items-center justify-center text-xs hover:bg-white hover:text-denim-deep transition-colors">IN</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-display text-sm tracking-wide uppercase mb-4">Company</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="/about" class="hover:text-orange transition-colors">About Us</a></li>
+          <li><a href="/catalog" class="hover:text-orange transition-colors">Full Catalog</a></li>
+          <li><a href="/sample-request" class="hover:text-orange transition-colors">Request Samples</a></li>
+          <li><a href="/contact" class="hover:text-orange transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-display text-sm tracking-wide uppercase mb-4">Product Categories</h4>
+        <ul class="space-y-2.5 text-sm">
+          <% navCategories.forEach(function(cat){ %>
+            <li><a href="/catalog#<%= cat.slug %>" class="hover:text-orange transition-colors"><%= cat.name %></a></li>
+          <% }) %>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-display text-sm tracking-wide uppercase mb-4">Contact</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><%= site.address %></li>
+          <li><a href="mailto:<%= site.email %>" class="hover:text-orange transition-colors"><%= site.email %></a></li>
+          <li><a href="tel:<%= site.phone.replace(/\s+/g,'') %>" class="hover:text-orange transition-colors"><%= site.phone %></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stitch border-white/15"></div>
+
+    <div class="flex flex-col sm:flex-row justify-between gap-3 text-xs pt-6 text-[#8695A6]">
+      <span>&copy; <%= site.year %> Ahas Apparel. All rights reserved.</span>
+      <span class="space-x-5">
+        <a href="/privacy" class="hover:text-orange transition-colors">Privacy Policy</a>
+        <a href="/terms" class="hover:text-orange transition-colors">Terms</a>
+        <a href="/contact" class="hover:text-orange transition-colors">Trade Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
